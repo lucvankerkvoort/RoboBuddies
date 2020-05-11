@@ -10,6 +10,10 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   background: linear-gradient(
       to right bottom,
@@ -70,12 +74,12 @@ h1 {
 }
 .card:hover {
   transform: scale(1.1);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .card:active {
   transform: scale(0.9);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 input {
