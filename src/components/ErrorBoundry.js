@@ -8,8 +8,7 @@ class ErrorBoundry extends React.Component{
         this.setState({hasError: true})
     }
     render(){
-        return(
-
-        )
+        const {hasError} = this.state;
+        return hasError? <h1>Oops... Something went wrong</h1>: this.props.children
     }
 }
